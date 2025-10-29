@@ -2,12 +2,8 @@
 
 namespace PlatformService.Models
 {
-    public class Platform
+    public class PlatformCreateDto
     {
-        [Key]
-        [Required]
-        public int Id { get; set; }
-
         [Required]
         public string? Name { get; set; }
 
