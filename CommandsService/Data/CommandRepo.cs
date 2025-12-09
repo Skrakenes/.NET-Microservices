@@ -47,12 +47,12 @@ public class CommandRepo : ICommandRepo
             .OrderBy(c => c.Platform.Name);
     }
 
-    public bool platformExsists(int platformId)
+    public bool PlatformExsists(int platformId)
     {
         return _context.Platforms.Any(p => p.Id == platformId);
     }
 
-    public bool SaveChages()
+    public bool SaveChanges()
     {
         return (_context.SaveChanges() >= 0);
     }

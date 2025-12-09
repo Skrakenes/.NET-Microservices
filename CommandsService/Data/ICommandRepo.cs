@@ -4,12 +4,12 @@ namespace CommandsService.Data;
 
 public interface ICommandRepo
 {
-    bool SaveChages();
+    bool SaveChanges();
 
     //Platforms
     IEnumerable<Platform> GetAllPlatforms();
     void CreatePlatform(Platform plat);
-    bool platformExsists(int platformId);
+    bool PlatformExsists(int platformId);
 
     //Commands
     IEnumerable<Command> GetCommandsForPlatform(int platformId);
