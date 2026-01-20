@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: commandservice
-          image: kristiansk/commandservice:net10
+          image: kristiansk/commandservice:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80

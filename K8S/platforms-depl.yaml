@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: platformservice
-          image: kristiansk/platformservice:net10
+          image: kristiansk/platformservice:latest
           ports:
             - containerPort: 80
           env:
